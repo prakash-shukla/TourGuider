@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:hint="@string/enter_your_name"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/enter_user_name"
+        android:inputType="text" />
+
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/confirmpass"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/confirm_your_password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_gravity="center"
+        android:layout_marginBottom="166dp"
+        android:background="#008000"
+        android:text="@string/sign_up"
+        android:layout_alignLeft="@+id/name" />
+
+    <Button
+        android:id="@+id/signinpage"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/signup"
+        android:layout_marginEnd="29dp"
+        android:background="#008000"
+        android:text="SIGN IN"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp" />
+</RelativeLayout>
